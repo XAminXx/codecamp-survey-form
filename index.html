@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Tell us More about Yourself</h1>
+    <p id="description">Thank you for taking the time to help us improve</p>
+    <form action="" id="survey-form">
+        <fieldset>
+            <label for="" id="name-label">Please Enter your Name: 
+                <input type="text" id="name" required placeholder="Ex: Mohammad Amin">
+            </label>
+            <label for="" id="email-label">Please Enter your Email Address: 
+                <input type="email" id="email" required placeholder="Ex: example@gmail.com">
+            </label>
+            <label for="" id="number-label">Please Enter your Age: 
+                <input type="number" id="number" min="18" max="120" placeholder="Ex: 20">
+            </label>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <label for="">Which option best describes your current role?
+                <select name="" id="dropdown">
+                    <option disabled selected value="">Select One</option>
+                    <option value="1">Student</option>
+                    <option value="2">Full Time Job</option>
+                    <option value="3">Freelancer</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+            <label class="label-radio" for="">Would you recommend my form to a friend? <input type="radio" name="radio-button" class="inline" value="yes">Yes</label><label class="label-radio" for=""><input type="radio" name="radio-button" class="inline" value="no">No</label>
+            <label for="">Choose your Hobbies:<br><br><input type="checkbox" name="radio-button" class="inline" value="videogames"> Video Game</label>
+            <label for=""><input type="checkbox" value="movies" class="inline"> Movies</label>
+            <label for=""><input type="checkbox" value="musics" class="inline"> Musics</label>
+            <label for=""><input type="checkbox" value="gym" class="inline"> Gym</label>
+            <label for=""><input type="checkbox" value="other" class="inline"> Other</label>
+        </fieldset>
+        <hr>
+        <label for="">Tell Us More:
+            <textarea name="text" id="textarea" cols="30" rows="10" placeholder="I Like go Shopping..."></textarea>
+        </label>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+</html>
